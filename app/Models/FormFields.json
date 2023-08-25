@@ -1,0 +1,101 @@
+{
+    "login":{
+        "email": {
+            "label": "Email",
+            "placeholder": "Enter email",
+            "errors": {
+                "valid": "please enter a valid email!",
+                "required": "email is required!"
+            }
+        },
+        "password": {
+            "label": "Password",
+            "placeholder": "Enter Password",
+            "errors": {
+              "required": "Password is required!",
+              "pattern": {
+                "value": "^[A-Za-z]+$",
+                "message": "Please enter a valid Password"
+              },
+              "maxLength":  "Password cannot exceed 30 characters",
+              "minLength":  "Password must have a minimum of 3 characters"
+              
+            }
+          }
+    },
+    "update":{
+        "image": {
+            "label": "User Image",
+            "subLabel": "user image cannot exceed 4mb in size",
+            "placeholder": "upload image",
+            "packageSize": 4
+        },
+        "first_name": {
+            "label": "First Name",
+            "placeholder": "Enter First Name",
+            "errors": {
+                "valid": "please enter a valid first name!",
+                "required": "first name is required!"
+            }
+        },
+        "last_name": {
+            "label": "Last Name",
+            "placeholder": "Enter Last Name",
+            "errors": {
+                "valid": "please enter a valid last name!",
+                "required": "last name is required!"
+            }
+        },
+        "email": {
+            "label": "Email Address",
+            "placeholder": "Enter email",
+            "errors": {
+                "valid": "please enter a valid email!",
+                "required": "email is required!"
+            }
+        },
+        "phone_number": {
+            "label": "Phone Number",
+            "placeholder": "Enter Phone Number",
+            "errors": {
+                "valid": "please enter a valid Phone Number!",
+                "required": "Phone Number is required!"
+            }
+        },
+        "department": {
+            "label": "Department",
+            "placeholder": "Enter department",
+            "errors": {
+                "valid": "please enter a valid department!",
+                "required": "department is required!"
+            }
+        },
+        "role": {
+            "label": "Role",
+            "placeholder": "Enter Role",
+            "errors": {
+                "valid": "please enter a valid Role!",
+                "required": "Role is required!"
+            }
+        },
+        "date_of_join": {
+            "label": "Date Of Join",
+            "placeholder": "Enter Date Of Join",
+            "errors": {
+                "valid": "please enter a valid Date Of Join!",
+                "required": "Date Of Join is required!"
+            }
+        },
+        "salary": {
+            "label": "Salary",
+            "placeholder": "Enter salary",
+            "errors": {
+                "valid": "please enter a valid salary!",
+                "required": "salary is required!"
+            }
+        }
+
+    }
+  }
+
+  

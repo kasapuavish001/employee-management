@@ -1,0 +1,105 @@
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+  letter-spacing: 0.24px;
+  font-family: "Open Sans";
+  background-color: #fff;
+}
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6 {
+  margin-bottom: 0;
+}
+html body p,
+html body a,
+html body ul li {
+  margin-bottom: 0;
+}
+html body input,
+html body button,
+html body textarea,
+html body label {
+  margin-bottom: 0;
+}
+html body label {
+  display: block;
+}
+html body a {
+  text-decoration: none !important;
+}
+html body ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+html body img {
+  width: 100%;
+  max-width: 100%;
+}
+html body button:active,
+html body button:focus,
+html body input:active,
+html body input:focus,
+html body input:focus-visible {
+  box-shadow: none;
+  outline: 0;
+}
+html body .form_control {
+  display: block;
+  width: 100%;
+}
+html body button:focus {
+  outline: 0;
+}
+html body textarea {
+  resize: none;
+}
+html body button {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  padding: 0px;
+  background: transparent;
+}
+html body input[type=number]::-webkit-inner-spin-button,
+html body input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+.contain {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+@media (max-width: 767px) {
+  .contain {
+    padding: 0px 15px;
+  }
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+.title {
+  line-height: 46px;
+  font-weight: 800;
+  font-size: 32px;
+}

@@ -1,0 +1,98 @@
+
+$colors: (
+    bg: #171630,
+    primary: #e56736,
+    Secondary: #d2537c,
+    White: #ffffff,
+    text: #1f1e42,
+    lighttext: #67717d
+);
+
+$primaryFont: 'Open Sans';
+$ptsans:'PT Sans';
+
+$sm: 767px;
+$md: 992px;
+$lg: 1024px;
+$lgl: 1228px;
+$xl: 1441px;
+
+@mixin xl {
+    @media (min-width: #{$xl}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$lg}) {
+        @content;
+    }
+}
+
+@mixin desktop_small {
+    @media (max-width: #{$lgl}) {
+        @content;
+    }
+}
+
+@mixin small-desktop {
+    @media (max-width: #{$lg}) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: #{$md}) {
+        @content;
+    }
+}
+
+@mixin from-tab {
+    @media (min-width: #{$sm}) {
+        @content;
+    }
+}
+
+@mixin till-large {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$sm}) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: 680px) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media (max-width: 540px) {
+        @content;
+    }
+}
+
+@mixin tiny {
+    @media (max-width: 425px) {
+        @content;
+    }
+}
+@mixin xl-tiny {
+    @media (max-width:375px) {
+        @content;
+    }
+}
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}

@@ -1,0 +1,94 @@
+@import '../../styles/_mixin.scss';
+
+.em_update {
+    &_wrap {
+        background-color: #ffffff;
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: 600;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .mainsection {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        margin: 0 auto;
+
+        .form {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .form_col {
+                width: calc(100% / 2);
+
+                &:first-child {
+                    width: 100%;
+                }
+            }
+
+            .InputWrapper {
+                margin-right: 20px;
+                border: 2px solid rgb(241, 241, 241);
+                padding: 10px 2px;
+                border-radius: 5px;
+            }
+
+            label {
+                font-size: 16px;
+                font-weight: 600;
+                padding: 10px 0;
+            }
+
+            input {
+                width: 100%;
+                border: none;
+            }
+
+            .btn {
+                margin: 10px 0;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 300;
+                padding: 10px 20px;
+                background-color: #ea5a29;
+            }
+
+        }
+    }
+}
+
+.imageholder {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.imageblock {
+    display: flex;
+
+    border-radius: 50%;
+
+    img {
+        border-radius: 50%
+    }
+}
+
+.updatebtn {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    padding: 7px 15px;
+    border: 2px solid rgb(236, 234, 234);
+}
+
+.error_msg {
+    font-size: 14px;
+    font-weight: 300;
+    color: tomato;
+    padding: 2px 0;
+}
