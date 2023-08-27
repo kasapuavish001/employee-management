@@ -1,12 +1,15 @@
-import Link from "next/link";
-import MyComponent from "./components/test";
 
+import Image from 'next/image'
+import Header from './components/header'
+import Navbar from './components/navbar'
+import Display from './components/Display'
 
 export default function Home() {
   return (
-    <h1>Home
-        <Link href='/pages/login'>Login</Link>
-        <MyComponent/>
-    </h1>
+    <>
+    <Header/>
+    <Navbar/>
+    </>
+
   )
 }

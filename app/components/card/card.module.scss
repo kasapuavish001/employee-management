@@ -1,0 +1,92 @@
+@import '../../styles/_mixin.scss';
+
+.profiles{
+    width: calc(95% / 3);
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0px 0px 1.5px 0px rgba(0,0,0,0.32);
+    .employee{
+        background-color: #f8fafb;
+        border-radius: 10px;
+        padding: 15px;
+        .top{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            .imagehold{
+                position: relative;
+                width: 70px;
+                height: 70px;
+
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .status{
+                background-color: red;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                position: absolute;
+                bottom: 0;
+                left: 50px;
+            }
+        }
+        .name{
+            color: black;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+        .role{
+            color: #0000007d;
+            font-weight: 600;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .desc{
+            
+            display: flex;
+            justify-content: space-between;
+            padding-top: 5px;
+            .dept{
+                .deptitle{
+                    color: #0000007d;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+                .deptname{
+                    color: black;
+                    font-weight: 600;
+                    margin-top: 5px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .contact{
+            margin-top: 20px;
+            .email{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-top: 5px;
+                .icon{
+                    width: 20px;
+                    height: 15px;
+                }
+                .emailname{
+                    margin-top: 0;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.btnmenu{
+    width: 50px;
+    .icon{
+        width: 20px;
+    }
+}

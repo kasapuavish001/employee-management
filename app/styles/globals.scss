@@ -13,9 +13,10 @@ html {
         padding: 0;
         overflow-x: hidden !important;
         scroll-behavior: smooth;
-        letter-spacing: .24px;
+
+		letter-spacing: .24px;
         font-family: $primaryFont;
-        background-color: #fff;
+        background-color: #ffffff;
 
         h1,
         h2,
@@ -38,11 +39,13 @@ html {
         label {
             margin-bottom: 0;
 
+            
         }
 
-        label {
-            display: block;
-        }
+		label {
+			display: block;
+		}
+
 
         a {
             text-decoration: none !important;
@@ -68,11 +71,14 @@ html {
             outline: 0;
         }
 
-        .form_control {
-            display: block;
-            width: 100%;
-        }
 
+		.form_control {
+			display: block;
+    		width: 100%;
+		}
+		
+
+  
         button:focus {
             outline: 0;
         }
@@ -83,10 +89,12 @@ html {
 
         button {
             cursor: pointer;
-            display: inline-block;
+
+			display: inline-block;
             border: none;
             padding: 0px;
             background: transparent;
+            
 
         }
 
@@ -99,11 +107,12 @@ html {
 }
 
 .contain {
-    max-width: 1300px;
+
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 25px;
-    padding-left: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
 
     @include mobile {
         padding: 0px 15px;
