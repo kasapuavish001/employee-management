@@ -1,66 +1,104 @@
 @import '../../styles/_mixin.scss';
 
-.em_display{
+.em_display {
     position: absolute;
     top: 93px;
     left: 350px;
-    width: 68%;
-    .bar{
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 0px;
-        height: 40px;
-        // position: fixed;
-    }
-    .title{
-        margin: 0px;
-        color: gray;
-        font-size: 30px;
-        font-weight: 600;
-        span{
-            color: #ea5a29;
-            font-size: 30px;
-            font-weight: 600;
+    width: 50%;
+    padding: 0px 40px;
+    .title {
+        h1 {
+            color: #4c5256;
         }
     }
-
-    .btns{
-        display: flex;
-        gap: 10px;
-        .btn1{
-            width: 100px;
-            height: 50px;
-            background-color: #f4f4f4;
-            border-radius: 10px;
-            padding: 10px;
-        }
-        .btn2{
+   .add{
+    .wrap{
+        margin-top: 10px;
+        .top{
             display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 150px;
-            height: 50px;
-            background-color: #ea5a29;
-            border-radius: 10px;
-            color: white;
-            padding: 10px;
-        }
-        button{
-            display: flex;
-            align-items: center;
-            height: 30px;
-            .icon{
-                width: 25px;
-                height: 25px;
-                padding-right: 10px;
-                color: gray;
+        flex-wrap: wrap;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    
+        .box {
+            width: calc(100% / 2 - 30px);
+            margin: 15px;
+    
+            &:nth-child(3) {
+                width: 100%;
+            }
+    
+            label {
+                color: #4c5256;
+                padding-bottom: 15px;
+                font-weight: 600;
+            }
+    
+            input {
+                width: 100%;
+                line-height: 1.5rem;
+                border-radius: 10px;
+                border: 2px solid #4c5256;
+                padding: 8px;
+                &:hover{
+                    border: 2px solid #6319e8;
+                }
             }
         }
     }
-}
+    .bottom{
+            display: flex;
+            flex-wrap: wrap;
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            .box {
+                width: calc(100% / 2 - 30px);
+                margin: 15px;
+    
+                label {
+                    color: #4c5256;
+                    padding-bottom: 15px;
+                    font-weight: 600;
+                }
+    
+                input {
+                    width: 100%;
+                    line-height: 1.5rem;
+                    border-radius: 10px;
+                    border: 2px solid #4c5256;
+                    padding: 8px;
+                    &:hover{
+                        border: 2px solid #6319e8;
+                    }   
+                }
+            }  
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+        .btn{
+            height: 40px;
+            width: 100%;
+            border-radius: 25px;
+            border: 2px solid #000000ad;
+            margin-right: 10px;
+            &.btn1{
+                background-color: #982def;
+                color: white;
+                border: none;
+                outline: none;
+            }
+            &.btn2{
+                background-color: #6319e8;
+                color: white;
+                border: none;
+                outline: none;
+            }
+        }
+    } 
+    }
+   }
 
-.cardwrap{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
