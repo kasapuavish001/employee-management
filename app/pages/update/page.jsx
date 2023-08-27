@@ -13,15 +13,40 @@ const Update = () => {
     const { setValue, reset, watch, control, handleSubmit, isDragAccept, formState: { errors } } = useForm({
         resolver: yupResolver(schema)
     })
-    const onSubmit = data => {
-        reset()
-        console.log(data)
-    }
+    // const onSubmit = data => {
+
+    //     // reset()
+    //     console.log(data)   
+    // }
+
+    const onSubmit = async data => {
+
+        console.log(data, 'data');
+        try {
+            const response = await fetch('http://192.168.1.12:9999/employee/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data), // Make sure the structure of "data" matches the server's expectations
+            });
+
+            if (response.ok) {
+                console.log('Data submitted successfully');
+                reset(); // Reset the form on successful submission
+            } else {
+                console.error('Failed to submit data');
+            }
+        } catch (error) {
+            console.error('An error occurred:', error);
+        }
+    };
+
     console.log(errors)
 
     const FormBuilder = [
         {
-            name: 'image',
+            name: 'imageBase64',
             parent: 'update',
             styles,
             control,
@@ -33,7 +58,7 @@ const Update = () => {
             isDragAccept: false,
         },
         {
-            name: 'first_name',
+            name: 'firstName',
             parent: 'update',
             styles,
             control,
@@ -42,7 +67,7 @@ const Update = () => {
             airstrike: false,
         },
         {
-            name: 'last_name',
+            name: 'lastName',
             parent: 'update',
             styles,
             control,
@@ -60,7 +85,7 @@ const Update = () => {
             airstrike: false,
         },
         {
-            name: 'phone_number',
+            name: 'phoneNumber',
             parent: 'update',
             styles,
             control,
@@ -87,7 +112,7 @@ const Update = () => {
             airstrike: false,
         },
         {
-            name: 'date_of_join',
+            name: 'doj',
             parent: 'update',
             styles,
             control,
@@ -153,24 +178,24 @@ const schema = yup.object().shape({
         yup.string()
             .email(FormFields.update.email.errors.valid)
             .required(FormFields.update.email.errors.required),
-    first_name:
+    firstName:
         yup.string()
-            .required(FormFields.update.first_name.errors.required),
-    last_name:
+            .required(FormFields.update.firstName.errors.required),
+    lastName:
         yup.string()
-            .required(FormFields.update.last_name.errors.required),
-    phone_number:
+            .required(FormFields.update.lastName.errors.required),
+    phoneNumber:
         yup.string()
-            .required(FormFields.update.phone_number.errors.required),
+            .required(FormFields.update.phoneNumber.errors.required),
     department:
         yup.string()
             .required(FormFields.update.department.errors.required),
     role:
         yup.string()
             .required(FormFields.update.role.errors.required),
-    date_of_join:
+    doj:
         yup.string()
-            .required(FormFields.update.date_of_join.errors.required),
+            .required(FormFields.update.doj.errors.required),
     salary:
         yup.string()
             .required(FormFields.update.salary.errors.required),
