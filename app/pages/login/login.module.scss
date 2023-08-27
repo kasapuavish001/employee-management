@@ -1,0 +1,105 @@
+@import '../../styles/_mixin.scss';
+
+.em_login {
+    &_wrap {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_header {
+        position: absolute;
+        top: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .imageholder {
+            position: relative;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &_mainsection {
+        border: 2px solid rgb(245, 246, 246);
+        padding: 50px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+
+        .title {
+            font-size: 27px;
+            font-weight: 600;
+            padding: 5px 0;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            font-weight: 600;
+            padding-bottom: 5px;
+        }
+
+        .form {
+            width: 250px;
+        }
+
+        .form_col {
+            margin: 10px 0;
+        }
+
+        .FormLabel {
+            font-size: 12px;
+            font-weight: 500;
+            padding: 5px 0;
+        }
+
+        .InputWrapper {
+            padding: 5px 2px;
+            border: 2px solid rgb(238, 238, 238);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+
+            .icon {
+                margin: 0 5px;
+                width: 12px;
+                color: rgb(138, 142, 142);
+                cursor: pointer;
+            }
+        }
+
+        input {
+            border: none;
+            width: 100%;
+        }
+
+        .forgot {
+            display: flex;
+            justify-content: flex-end;
+            padding: 5px 0;
+            font-size: 12px;
+            font-weight: 500;
+            color: #3e38f5;
+        }
+
+        .btn {
+            background-color: #3e38f5;
+            color: #fff;
+            width: 100%;
+            border-radius: 5px;
+            padding: 8px 5px;
+            margin: 10px 0;
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        .error_msg {
+            color: tomato;
+            font-size: 12px;
+            font-weight: 400;
+            padding-top: 5px;
+        }
+    }
+}

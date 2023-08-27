@@ -1,5 +1,6 @@
 @import './_mixin.scss';
 
+
 html {
     overflow-x: hidden !important;
     scroll-behavior: smooth;
@@ -12,9 +13,11 @@ html {
         padding: 0;
         overflow-x: hidden !important;
         scroll-behavior: smooth;
+
 		letter-spacing: .24px;
         font-family: $primaryFont;
         background-color: #ffffff;
+
         h1,
         h2,
         h3,
@@ -35,12 +38,14 @@ html {
         textarea,
         label {
             margin-bottom: 0;
+
             
         }
 
 		label {
 			display: block;
 		}
+
 
         a {
             text-decoration: none !important;
@@ -66,11 +71,14 @@ html {
             outline: 0;
         }
 
+
 		.form_control {
 			display: block;
     		width: 100%;
 		}
 		
+
+  
         button:focus {
             outline: 0;
         }
@@ -81,11 +89,13 @@ html {
 
         button {
             cursor: pointer;
+
 			display: inline-block;
             border: none;
             padding: 0px;
             background: transparent;
             
+
         }
 
         input[type="number"]::-webkit-inner-spin-button,
@@ -97,6 +107,7 @@ html {
 }
 
 .contain {
+
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
